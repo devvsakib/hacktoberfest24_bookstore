@@ -1,12 +1,13 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
-    "./index.html",
+    './index.html',
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
       colors: {
+        'custom-green': '#50da4c', // Your custom green color
         'bg-color': 'var(--bg-color)',
         'text-color': 'var(--text-color)',
         'primary-color': 'var(--primary-color)',

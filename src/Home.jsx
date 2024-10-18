@@ -26,6 +26,10 @@ function App() {
       name: "ফিকহুস সালাফ",
       src: images.fiqhsalaf
     },
+    {
+      name: "ফিকহুস সালাফ",
+      src: images.fiqhmuasser
+    },
   ]
   return (
     <>

@@ -7,6 +7,7 @@ export const images = {
     salafi_salafiporicoy: "/images/books/salafi_salafiporicoy.jpg",
     manhajsalaf: "/images/books/manhajsalaf.jpg",
     fiqhsalaf: "/images/books/fiqhsalaf.jpg",
+    fiqhmuasser: "/images/books/fiqhmuasser.jpg",
     haranosunnah: "/images/books/haranosunnah.jpg",
     tafsirsadi: "/images/books/tafsirsadi.jpg",
     alfatwaalhama: "/images/books/alfatwaalhama.jpg",
