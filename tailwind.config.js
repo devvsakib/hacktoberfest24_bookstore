@@ -13,6 +13,9 @@ export default {
         'secondary-color': 'var(--secondary-color)',
         'border-color': 'var(--border-color)',
       },
+      backgroundColor: {
+        gColor: 'var(--gradColor)'
+      }
     },
   },
   plugins: [require('daisyui')],

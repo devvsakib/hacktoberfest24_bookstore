@@ -15,7 +15,8 @@ const Header = () => {
         border: '1px solid',
         borderColor: "blue",
         backgroundColor: '#ffffff40',
-        boxShadow: "1px solid orange"
+        boxShadow: "1px solid orange",
+        zIndex: 9999999999999,
     };
     const menu = [
         {
