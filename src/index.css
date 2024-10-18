@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-color: #121212;
+  /* Background color */
+  --text-color: #ffffff;
+  /* Text color */
+  --primary-color: #024CAA;
+  /* Primary accent color */
+  --secondary-color: #08C2FF;
+  /* Secondary accent color */
+  --border-color: #333333;
+  /* Border color */
+}
+
+/* styles.css or global.css */
+.light {
+  --bg-color: #ffffff;
+  /* Light theme background */
+  --text-color: #121212;
+  /* Light theme text color */
+  --primary-color: #024CAA;
+  /* Light theme primary color */
+  --secondary-color: #03dac6;
+  /* Light theme secondary color */
+  --border-color: #dddddd;
+  /* Light theme border color */
+}
+
+@font-face {
+  font-family: 'chayanaFont';
+  src: url('/fonts/Li Chayana Teesta Unicode.ttf');
+}
+
+@font-face {
+  font-family: 'nakkhatraFont';
+  src: url('/fonts/Li Alinur Nakkhatra Unicode.ttf');
+}
+
+@font-face {
+  font-family: 'uthmani';
+  src: url('/fonts/Uthmanic.otf');
+}
+
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.button {
+  background-color: var(--primary-color);
+  border: 1px solid var(--border-color);
+}
+
+.button-secondary {
+  background-color: var(--secondary-color);
+}
