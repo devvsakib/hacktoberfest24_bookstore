@@ -6,6 +6,8 @@ export const images = {
     shiaderojanaitihas: "/images/books/shiaderojanaitihas.jpg",
     salafi_salafiporicoy: "/images/books/salafi_salafiporicoy.jpg",
     manhajsalaf: "/images/books/manhajsalaf.jpg",
+    rahmanarosherupore: "/images/books/rahmanarosherupore.jpg",
+    usuliman: "/images/books/usuliman.jpg",
     fiqhsalaf: "/images/books/fiqhsalaf.jpg",
     fiqhmuasser: "/images/books/fiqhmuasser.jpg",
     haranosunnah: "/images/books/haranosunnah.jpg",
@@ -21,9 +23,12 @@ export const images = {
     hadithmuslim: "/images/books/hadithmuslim.jpg",
     hadithbukhari: "/images/books/hadithbukhari.jpg",
     hadithmiskat: "/images/books/hadithmiskat.jpg",
-    
+
     // icons
     facebook: "/images/facebook.svg",
     whatsapp: "/images/whatsapp.png",
-    
+
+    // giveaway
+    giveaway1: "/images/giveaway/1.jpg",
+
 }
