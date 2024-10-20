@@ -1,8 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import Layout from "../Layout";
 import Title from "./Title";
-import { Link } from "react-router-dom";
-import { images } from "../../config/images";
 
 const Sections = ({ data, heading, text, className,setSelectedBook }) => {
 

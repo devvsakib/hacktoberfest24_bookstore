@@ -1,6 +1,6 @@
 import React from "react";
 import { images } from "/src/config/images.js"
-import { FaQuoteLeft, FaQuoteRight, FaQuran } from "react-icons/fa";
+import { FaQuoteLeft, FaQuoteRight, FaQuran, FaStar } from "react-icons/fa";
 
 const Banner = () => {
     return <section
@@ -26,7 +26,7 @@ const Banner = () => {
 
         <div className="w-full mx-auto z-10">
             <h3 className="text-5xl md:!text-[5rem] font-semibold font-white font-[nakkhatraFont] md:leading-[5rem] bg-gradient-to-bl from-blue-400 to-white text-transparent bg-clip-text pt-5 pl-2 md:pl-0 relative">ইলম পিপাসুদের পাথেয়। <br />
-            সুন্নাহর সাথে,  সালাফদের পথে।</h3>
+                সুন্নাহর সাথে,  সালাফদের পথে।</h3>
             <div className="relative mb-5">
                 <span className="gradientBorderBox block h-1"></span>
             </div>
@@ -38,6 +38,10 @@ const Banner = () => {
                     <FaQuoteRight className="opacity-30" />
                 </p>
             </div>
+        </div>
+        <div className="text-yellow-500 flex gap-2 text-2xl absolute right-0 left-0 bottom-28 justify-center w-[100%] items-center">
+            <FaStar />
+            <p>100% Customer Recommend</p>
         </div>
     </section>;
 };

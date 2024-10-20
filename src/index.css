@@ -14,7 +14,8 @@
   --border-color: #333333;
   --border-radius: 10px;
   --gradColor: radial-gradient(circle, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
-  /* Border color */
+  --uthman: "uthmani"
+  
 }
 
 /* styles.css or global.css */
@@ -81,13 +82,17 @@ body {
 }
 
 .gradText {
-  background: linear-gradient(-54deg, #7700ff 20%, #FF5242 70%);
+  background: linear-gradient(-54deg, #4956F2 20%, #19A6FC 70%);
   background-clip: text;
   -webkit-background-clip: text;
   width: fit-content;
   margin: auto;
   color: transparent;
   font-weight: bold;
+}
+
+.banglaAyah{
+  color: #19A6FC;
 }
 
 .gradientBorderBox:before,

@@ -8,6 +8,8 @@ import { Link } from 'react-router-dom'
 import Footer from './components/Footer'
 import Title from './components/Shared/Title'
 import Sections from './components/Shared/Sections'
+import { FaQuoteLeft, FaQuoteRight } from 'react-icons/fa'
+import CustomerReview from './components/CustomerReview'
 
 function App() {
 
@@ -86,10 +88,24 @@ function App() {
       className: "grad"
     },
     {
+      type: "ayah",
+      who_said: "আল্লাহ বলেন",
+      ayah_arabic: "﴾ قُلْ هَلْ يَسْتَوِي الَّذِينَ يَعْلَمُونَ    وَالَّذِينَ لَا يَعْلَمُونَ ﴿",
+      ayah_bangla: "অর্থাৎ বল, যারা জানে এবং যারা জানে না তারা কি সমান?",
+      source: "যুমার ৯ আয়াত"
+    },
+    {
       heading: "সিহাহ সিত্তাহ",
       text: "সহীহ হাদিস সমূহ",
       data: hadithBooks,
       className: "grad2"
+    },
+    {
+      type: "ayah",
+      who_said: "আল্লাহ বলেন",
+      ayah_arabic: "﴾ يَرْفَعِ اللَّهُ الَّذِينَ آمَنُوا مِنْكُمْ وَالَّذِينَ أُوتُوا الْعِلْمَ دَرَجَاتٍ ﴿",
+      ayah_bangla: "অর্থাৎ যাদেরকে জ্ঞান দান করা হয়েছে আল্লাহ তাদেরকে বহু মর্যাদায় উন্নত করবেন।",
+      source: "মুজাদালা ১১ আয়াত"
     },
     {
       heading: "তাফসীর",
@@ -112,14 +128,14 @@ function App() {
           backgroundPosition: "center"
         }}
       >
-        <div className='absolute bottom-0 left-0 bg-black/60 w-full h-full'></div>
+        <div className='absolute bottom-0 left-0 bg-black/60 w-full h-full overflow-x-hidden'></div>
         <Layout>
           <div className='py-40 z-40 grid gap-20 justify-center items-center mx-auto'>
             <Title text={"আমাদের উদ্দেশ্য সালাফি মানহাজের বইপত্রের প্রচার প্রচারণা বাড়ানো।"} heading={"Giveaway🎉"} customClassText={"text-xs md:text-base"} />
             <div className='grid md:grid-cols-2 gap-24 relative'>
               <div className='relative h-full p-1'>
                 <div className='gradientBorderBox1 h-full overflow-hidden'>
-                  <img className='w-full rounded-lg shadow-md' src={images.giveaway1} />
+                  <img className='w-full rounded-lg shadow-md border-2 border-white' src={images.giveaway1} />
                 </div>
               </div>
               <div>
@@ -145,15 +161,43 @@ function App() {
           </div>
         </Layout >
       </section >
-      {
-        sectionsData.map((section, idx) => <Sections
-          heading={section.heading}
-          text={section.text}
-          data={section.data}
-          className={section.className}
-          setSelectedBook={setSelectedBook}
+      {/* <section className='relative py-20'>
+        <Layout>
+          <div className="flex w-full">
+            <div className="card bg-base-300 rounded-box grid h-20 flex-grow place-items-center">content</div>
+            <div className="divider divider-horizontal">OR</div>
+            <div className="card bg-base-300 rounded-box grid h-20 flex-grow place-items-center">content</div>
+          </div>
+          <div className={'absolute top-0 left-0 right-0 w-full h-full z-10 grad3'}></div>
+        </Layout >
 
-        />)
+      </section> */}
+
+      {
+        sectionsData.map((section, idx) => section.type ?
+          <div
+            className='max-w-[800px] mx-auto px-5 min-h-[50vh] grid place-content-center overflow-x-hidden'
+            key={idx}
+
+          >
+            <div className='text-center  gap-4 text-white relative'>
+              <FaQuoteLeft className='text-5xl absolute top-0 -left-12' />
+              <span className=''>{section.who_said}</span>
+              <h3 className='font-uthman text-xl md:text-5xl leading-[1.5em] md:leading-normal'>{section.ayah_arabic}</h3>
+              <p className='text-2xl md:text-4xl banglaAyah'>{section.ayah_bangla}</p>
+              <span className='badge badge-primary mx-auto text-white'>{section.source}</span>
+              <FaQuoteRight className='text-5xl absolute bottom-0 -right-12' />
+            </div>
+          </div>
+          :
+          <Sections
+            key={idx}
+            heading={section.heading}
+            text={section.text}
+            data={section.data}
+            className={section.className}
+            setSelectedBook={setSelectedBook}
+          />)
       }
 
 
@@ -175,6 +219,8 @@ function App() {
           <button>close</button>
         </form>
       </dialog>
+
+      <CustomerReview />
 
       <Footer />
 

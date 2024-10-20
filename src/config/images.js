@@ -30,5 +30,14 @@ export const images = {
 
     // giveaway
     giveaway1: "/images/giveaway/1.jpg",
+    
+    // review
+    review1: "/images/review/review1.png",
+    review2: "/images/review/review2.png",
+    review3: "/images/review/review3.png",
+    review4: "/images/review/review4.png",
+    review5: "/images/review/review5.png",
+    review6: "/images/review/review6.png",
+    review7: "/images/review/review7.png",
 
 }

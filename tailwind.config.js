@@ -16,6 +16,9 @@ export default {
       },
       backgroundColor: {
         gColor: 'var(--gradColor)'
+      },
+      fontFamily:{
+        uthman: "uthmani"
       }
     },
   },
