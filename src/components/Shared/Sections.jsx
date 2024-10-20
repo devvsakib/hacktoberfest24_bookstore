@@ -36,7 +36,6 @@ const Sections = ({ data, heading, text, className,setSelectedBook }) => {
                 </div>
                 <div className={'absolute top-0 left-0 right-0 w-full h-full z-10 ' + className}></div>
             </Layout >
-           
         </section>
     )
 };
