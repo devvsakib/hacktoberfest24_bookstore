@@ -14,8 +14,8 @@
   --border-color: #333333;
   --border-radius: 10px;
   --gradColor: radial-gradient(circle, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
-
-  /* Border color */
+  --uthman: "uthmani"
+  
 }
 
 /* styles.css or global.css */
@@ -52,6 +52,7 @@ body {
   background-color: var(--bg-color);
   color: var(--text-color);
   font-family: nakkhatraFont;
+  font-size: var(--font-size);
 }
 
 .button {
@@ -72,14 +73,26 @@ body {
   background: radial-gradient(circle at top, #5073b860, transparent 60%);
 }
 
+.grad2 {
+  background: radial-gradient(circle at bottom, #07b39b70, transparent 60%);
+}
+
+.grad3 {
+  background: radial-gradient(circle at top, #ef4e7b60, transparent 60%);
+}
+
 .gradText {
-  background: linear-gradient(-54deg, #7700ff 20%, #FF5242 70%);
+  background: linear-gradient(-54deg, #4956F2 20%, #19A6FC 70%);
   background-clip: text;
   -webkit-background-clip: text;
   width: fit-content;
   margin: auto;
   color: transparent;
   font-weight: bold;
+}
+
+.banglaAyah{
+  color: #19A6FC;
 }
 
 .gradientBorderBox:before,
