@@ -115,6 +115,8 @@ function App() {
     },
   ]
   const [selectedBook, setSelectedBook] = useState("")
+  const [deadLine, setDeadLine] = useState("10/27/24");
+
 
   return (
     <>
@@ -139,7 +141,15 @@ function App() {
                 </div>
               </div>
               <div>
-                <div className="badge badge-accent mb-5">On going</div>
+                {
+                  new Date(deadLine) < new Date() ?
+                    <div className="badge badge-primary mb-5">On going</div>
+                    :
+                    <div>
+                      <div className="badge badge-error mb-5 mr-2">Over</div>
+                      <span className='opacity-60 line-through'>{deadLine}</span>
+                    </div>
+                }
                 {/* <div className="badge badge-accent">Over</div> */}
                 <h2 className='text-5xl'>নিম্নোক্ত শর্ত অনুযায়ী অংশগ্রহণ করুন:</h2>
                 <ul className='grid gap-5 mt-6 text-xl md:text-2xl'>
@@ -151,6 +161,7 @@ function App() {
                 </ul>
                 <div className='mt-5 text-center md:text-left'>
                   <Link
+                    disabled={true}
                     to={"https://www.facebook.com/photo/?fbid=903773335147738&set=a.541824728009269"}
                     className='px-10 btn btn-primary font-[Poppins] text-white rounded-badge'
                   >Participate</Link>
